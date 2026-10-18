@@ -1,0 +1,156 @@
+{
+  "site": {
+    "name": "Skate 3 Browser Game Wiki",
+    "shortName": "Skate 3 Browser Game",
+    "tagline": "Wiki de fans",
+    "description": "Cómo jugar a Skate 3 en tu navegador — el port web basado en RPCS3 paso a paso, la ruta oficial de Xbox Cloud Gaming, requisitos, controles y todas las respuestas.",
+    "legalNotice": "Wiki independiente. No afiliada a Electronic Arts. Skate 3 y EA son marcas de Electronic Arts Inc."
+  },
+  "nav": {
+    "guides": "Guías",
+    "features": "Tecnología",
+    "comparisons": "Comparativas",
+    "faq": "FAQ",
+    "home": "Inicio",
+    "menu": "Menú",
+    "toggleTheme": "Cambiar tema"
+  },
+  "home": {
+    "meta": {
+      "title": "Skate 3 Browser Game: cómo jugar a Skate 3 online gratis",
+      "description": "Skate 3 Browser Game es real — juega al clásico de skate de EA gratis en tu navegador vía el port web RPCS3 o Xbox Cloud: pasos, controles y configuración."
+    },
+    "hero": {
+      "eyebrow": "Wiki de fans",
+      "title": "Skate 3 Browser Game",
+      "description": "Sí, de verdad puedes jugar a Skate 3 en un navegador. En octubre de 2026 un estudiante de 18 años lo logró: un port alojado en navegador construido sobre un núcleo RPCS3 (emulador de PS3) compatible con Chrome que ejecuta el motor completo del juego — sin descargas, sin consola, sin streaming, en casi cualquier dispositivo. Junto a él existe la ruta oficial: Xbox Cloud Gaming transmite Skate 3 por tu navegador con una suscripción de Game Pass. Esta wiki cubre ambos caminos al skatepark: guías paso a paso, controles, requisitos, la tecnología del port y cómo se compara con ejecutar RPCS3 tú mismo.",
+      "primaryCta": "Leer la guía completa",
+      "secondaryCta": "Verlo en marcha",
+      "tertiaryCta": "Todas las guías",
+      "stats": ["Sin descargas", "Casi cualquier dispositivo", "Dos formas de jugar", "Motor completo del juego"]
+    },
+    "updates": {
+      "title": "Novedades del skatepark",
+      "browse": "Ver todas las guías",
+      "viewAll": "Ver todo"
+    },
+    "start": {
+      "eyebrow": "Patinando en cuatro pasos",
+      "title": "De la pestaña del navegador al primer ollie",
+      "cards": [
+        { "number": "1", "title": "Conoce el juego", "description": "El Skate 3 Browser Game es un port comunitario, no un lanzamiento oficial de EA — la guía completa explica qué es y qué es real." },
+        { "number": "2", "title": "Juega el port web", "description": "La ruta no oficial: abre el sitio correcto en un navegador compatible con Chrome y el motor completo corre — la guía cubre cada paso." },
+        { "number": "3", "title": "O usa Xbox Cloud", "description": "La ruta oficial: Game Pass transmite Skate 3 por tu navegador — la guía cubre la configuración y los costes." },
+        { "number": "4", "title": "Aprende los controles", "description": "Los controles flick-stick traducidos a teclado y mando — la guía te lleva del primer empujón al primer tre flip." }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Lo más leído esta semana",
+      "title": "Tendencias",
+      "quickLinks": ["Cómo jugar", "Xbox Cloud", "Controles", "RPCS3"],
+      "cards": [
+        { "title": "Guía de Skate 3 Browser Game", "description": "La orientación completa — qué es el port, quién lo construyó y qué está corriendo." },
+        { "title": "Cómo jugar en el navegador", "description": "El paso a paso — abrir, cargar, patinar, y las soluciones a los fallos habituales." },
+        { "title": "La ruta de Xbox Cloud", "description": "La vía oficial — streaming de Game Pass en tu navegador en diez minutos." },
+        { "title": "Navegador vs RPCS3 vs Cloud", "description": "Tres caminos a Port Carverton comparados con honestidad." }
+      ]
+    },
+    "aboutGame": {
+      "title": "¿Qué es el Skate 3 Browser Game?",
+      "paragraphs": [
+        "El Skate 3 Browser Game es el giro argumental más encantador de 2026: un estudiante de 18 años logró alojar el clásico de skate de EA de 2010 a través de un navegador web, usando una build de RPCS3 —el emulador open-source de PlayStation 3— compatible con Chrome para ejecutar el motor real del juego en el cliente en lugar de transmitir vídeo. El resultado funciona en casi cualquier dispositivo con navegador: portátiles, Chromebooks, móviles. Sin descarga, sin instalación, sin consola.",
+        "Hay dos caminos honestos a este skatepark y esta wiki documenta ambos: el port web no oficial (gratis, instantáneo, comunitario) y la ruta oficial (Xbox Cloud Gaming transmite Skate 3 por tu navegador con suscripción de Game Pass — pulido, legal, de pago). Ambos te llevan a Port Carverton."
+      ],
+      "stats": [
+        { "label": "Juego original", "value": "Skate 3 (2010)" },
+        { "label": "Tecnología", "value": "RPCS3 en navegador" },
+        { "label": "Creador", "value": "Dev de 18 años" },
+        { "label": "Estalló", "value": "Octubre 2026" },
+        { "label": "Dispositivos", "value": "Casi todos" },
+        { "label": "Precio", "value": "Gratis / Game Pass" }
+      ],
+      "cta": "Explorar todas las guías"
+    },
+    "explore": {
+      "title": "Todo sobre el Skate 3 en navegador, mapeado",
+      "description": "Guías, tecnología, comparativas y respuestas — el kit completo.",
+      "modules": [
+        { "order": 1, "name": "Guía de Skate 3 Browser Game", "description": "La orientación completa.", "href": "/guide/skate-3-browser-game-guide", "displayType": "step-by-step", "highlights": [{ "label": "1", "detail": "Qué es realmente el port" }, { "label": "2", "detail": "El dev de 18 años y el estallido de octubre" }, { "label": "3", "detail": "Qué es oficial y qué no" }] },
+        { "order": 2, "name": "Cómo jugar en el navegador", "description": "El port web, paso a paso.", "href": "/guide/how-to-play-in-browser", "displayType": "step-by-step", "highlights": [{ "label": "1", "detail": "Requisitos de navegador y sitio" }, { "label": "2", "detail": "Cargar, arrancar y patinar" }, { "label": "3", "detail": "Fallos de carga y soluciones" }] },
+        { "order": 3, "name": "La ruta de Xbox Cloud", "description": "La vía oficial.", "href": "/guide/xbox-cloud-gaming", "displayType": "tier-grid", "highlights": [{ "label": "S", "detail": "Game Pass — qué nivel necesitas" }, { "label": "A", "detail": "Streaming en diez minutos" }, { "label": "B", "detail": "Requisitos de internet" }, { "label": "C", "detail": "Costes vs el port gratis" }] },
+        { "order": 4, "name": "Controles y primeros trucos", "description": "De empujón a tre flip.", "href": "/guide/controls-and-tricks", "displayType": "code-cards", "highlights": [{ "label": "Flick It", "detail": "Controles flick-stick traducidos a teclado y mando", "badge": "Práctico" }] },
+        { "order": 5, "name": "Cómo funciona el port", "description": "La tecnología explicada.", "href": "/features/rpcs3-technology", "displayType": "card-list", "highlights": [{ "label": "🖥", "detail": "RPCS3 — el emulador de PS3 tras todo" }, { "label": "🌐", "detail": "Motor en navegador, no streaming de vídeo" }, { "label": "📱", "detail": "Por qué casi cualquier dispositivo lo corre" }] },
+        { "order": 6, "name": "Requisitos y rendimiento", "description": "Qué necesita tu máquina.", "href": "/features/requirements-and-performance", "displayType": "tier-grid", "highlights": [{ "label": "S", "detail": "Los requisitos que importan" }, { "label": "A", "detail": "Gamas — de Chromebook a PC gamer" }, { "label": "B", "detail": "Soporte de mando" }, { "label": "C", "detail": "Tropiezos de rendimiento esperables" }] },
+        { "order": 7, "name": "Navegador vs RPCS3 vs Cloud", "description": "Tres caminos comparados.", "href": "/comparisons/browser-vs-rpcs3-vs-cloud", "displayType": "step-by-step", "highlights": [{ "label": "1", "detail": "Port web vs RPCS3 local" }, { "label": "2", "detail": "Port gratis vs suscripción Cloud" }, { "label": "3", "detail": "Qué camino para qué skater" }] },
+        { "order": 8, "name": "FAQ", "description": "Respuestas directas.", "href": "/faq/faq", "displayType": "card-list", "highlights": [{ "label": "❓", "detail": "¿Es oficial? ¿Seguro? ¿Legal?" }, { "label": "💸", "detail": "¿De verdad es gratis?" }, { "label": "🎮", "detail": "¿Funciona con mando?" }] }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas rápidas a las preguntas más comunes sobre jugar Skate 3 en el navegador.",
+      "items": [
+        { "question": "¿Se puede jugar a Skate 3 en el navegador?", "answer": "Sí — desde octubre de 2026 hay dos formas. El port web no oficial ejecuta el motor completo en tu navegador vía una build de RPCS3 compatible con Chrome, gratis y sin descarga. La ruta oficial transmite Skate 3 por Xbox Cloud Gaming con suscripción de Game Pass. Ambas funcionan en una pestaña en casi cualquier dispositivo." },
+        { "question": "¿La versión de navegador es gratis?", "answer": "El port web comunitario es gratis. La ruta oficial de Xbox Cloud Gaming requiere suscripción de Xbox Game Pass. La página de comparativas desglosa qué te da cada una." },
+        { "question": "¿El port es el juego completo?", "answer": "El port web ejecuta el motor completo de Skate 3 — Port Carverton, el modo carrera, los trucos, todo — no una demo recortada. Es un proyecto comunitario, así que espera alguna rareza ocasional, pero lo que corre es el juego real." },
+        { "question": "¿Funciona en Chromebook o móvil?", "answer": "Ese es el truco estrella del port — como el trabajo pesado lo hace el motor alojado y tu dispositivo solo necesita un navegador moderno, corre en hardware que jamás podría instalar el original. El rendimiento varía; la página de requisitos lo detalla." }
+      ]
+    },
+    "finalCta": {
+      "title": "El skatepark está a una pestaña.",
+      "description": "Las guías, los controles, la tecnología y las comparativas — todo para ir de la pestaña a la primera línea en Port Carverton.",
+      "primary": "Leer la guía completa",
+      "secondary": "Skate 3 en Xbox Cloud"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Navegación de la wiki",
+    "activeCodes": "Rastreador del port",
+    "updated": "Actualizado",
+    "viewAllCodes": "Ver todas las guías",
+    "inThisSection": "En esta sección",
+    "tableOfContents": "Índice de contenidos",
+    "nextSteps": "Siguientes pasos",
+    "needHelp": "¿Necesitas ayuda?",
+    "relatedReading": "Lecturas relacionadas",
+    "relatedGuides": "Guías relacionadas",
+    "readMore": "Leer más",
+    "officialMedia": "Medios oficiales",
+    "home": "Inicio",
+    "noGuidesAvailable": "Aún no hay guías disponibles. ¡Vuelve pronto!"
+  },
+  "footer": {
+    "aboutTitle": "Skate 3 Browser Game Wiki",
+    "about": "Skate 3 Browser Game Wiki es una wiki independiente construida por fans que cubre el port web comunitario del clásico de skate de EA — cómo jugarlo en el navegador, la ruta oficial de Xbox Cloud, la tecnología RPCS3 detrás y todas las preguntas entremedias.",
+    "quickLinks": "Enlaces rápidos",
+    "guides": "Guías",
+    "legal": "Legal",
+    "copyright": "2026 Skate 3 Browser Game Wiki. No afiliada a Electronic Arts. Skate 3 es una marca de Electronic Arts Inc.",
+    "description": "Cómo jugar a Skate 3 en tu navegador — el port web, Xbox Cloud, controles y la tecnología.",
+    "playGame": "Página de Xbox Cloud",
+    "officialDiscord": "Comunidad",
+    "officialYoutube": "Skate 3 de EA",
+    "epicStore": "Xbox",
+    "beginnerGuide": "Guía completa",
+    "mapGuides": "Cómo jugar",
+    "weaponsGuides": "Ruta Xbox Cloud",
+    "buildGuide": "Tres caminos comparados",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio"
+  },
+  "guide": {
+    "overviewTitle": "Guías",
+    "overviewDescription": "Todas las guías de Skate 3 Browser Game — la orientación completa, el walkthrough del port web, la ruta de Xbox Cloud y los controles."
+  },
+  "features": {
+    "overviewTitle": "Tecnología",
+    "overviewDescription": "Cómo funciona el port y qué necesita tu máquina — la tecnología RPCS3 y los requisitos explicados."
+  },
+  "comparisons": {
+    "overviewTitle": "Comparativas",
+    "overviewDescription": "Tres caminos a Port Carverton — port de navegador, RPCS3 local y Xbox Cloud, comparados con honestidad."
+  },
+  "faq": {
+    "overviewTitle": "FAQ",
+    "overviewDescription": "Respuestas directas sobre el port — el precio, la legalidad, los dispositivos y los controles."
+  }
+}

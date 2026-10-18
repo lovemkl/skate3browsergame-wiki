@@ -1,0 +1,156 @@
+{
+  "site": {
+    "name": "Skate 3 Browser Game Wiki",
+    "shortName": "Skate 3 Browser Game",
+    "tagline": "Fan-Wiki",
+    "description": "Skate 3 im Browser spielen — der RPCS3-Web-Port Schritt für Schritt, die offizielle Xbox-Cloud-Gaming-Route, Anforderungen, Steuerung und alle Antworten.",
+    "legalNotice": "Unabhängige Fan-Wiki. Nicht mit Electronic Arts verbunden. Skate 3 und EA sind Marken der Electronic Arts Inc."
+  },
+  "nav": {
+    "guides": "Guides",
+    "features": "Technik",
+    "comparisons": "Vergleiche",
+    "faq": "FAQ",
+    "home": "Start",
+    "menu": "Menü",
+    "toggleTheme": "Design wechseln"
+  },
+  "home": {
+    "meta": {
+      "title": "Skate 3 Browser Game: Skate 3 kostenlos online spielen",
+      "description": "Skate 3 Browser Game ist real — spiele EAs Skate-Klassiker gratis im Browser über den RPCS3-Web-Port oder Xbox Cloud: Schritte, Steuerung und Setup."
+    },
+    "hero": {
+      "eyebrow": "Fan-Wiki",
+      "title": "Skate 3 Browser Game",
+      "description": "Ja, man kann Skate 3 wirklich im Browser spielen. Im Oktober 2026 brachte ein 18-jähriger Student es zum Laufen: ein Browser-Port auf Basis eines Chrome-kompatiblen RPCS3-Kerns (PS3-Emulator), der die komplette Spiel-Engine im Browser ausführt — kein Download, keine Konsole, kein Streaming, auf fast jedem Gerät. Daneben gibt es den offiziellen Weg: Xbox Cloud Gaming streamt Skate 3 durch den Browser mit Game-Pass-Abo. Dieses Wiki begleitet beide Wege in den Skatepark: Schritt-für-Schritt-Guides, Steuerung, Anforderungen, die Technik dahinter und der Vergleich zum eigenen RPCS3.",
+      "primaryCta": "Komplette Guide lesen",
+      "secondaryCta": "Video ansehen",
+      "tertiaryCta": "Alle Guides",
+      "stats": ["Kein Download", "Fast jedes Gerät", "Zwei Wege", "Komplette Engine"]
+    },
+    "updates": {
+      "title": "Frisch aus dem Skatepark",
+      "browse": "Alle Guides ansehen",
+      "viewAll": "Alle ansehen"
+    },
+    "start": {
+      "eyebrow": "Skaten in vier Schritten",
+      "title": "Vom Browser-Tab zum ersten Ollie",
+      "cards": [
+        { "number": "1", "title": "Das Spiel verstehen", "description": "Der Skate 3 Browser Game Port ist ein Community-Projekt, kein offizieller EA-Release — die Komplettguide erklärt, was echt ist." },
+        { "number": "2", "title": "Den Web-Port spielen", "description": "Der inoffizielle Weg: die richtige Seite in einem Chrome-kompatiblen Browser öffnen und die komplette Engine läuft — der Guide zeigt jeden Schritt." },
+        { "number": "3", "title": "Oder Xbox Cloud", "description": "Der offizielle Weg: Game Pass streamt Skate 3 durch den Browser — der Guide deckt Setup und Kosten ab." },
+        { "number": "4", "title": "Steuerung lernen", "description": "Flick-Stick-Steuerung auf Tastatur und Controller übersetzt — vom ersten Anschieben zum ersten Tre Flip." }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Diese Woche am häufigsten gelesen",
+      "title": "Im Trend",
+      "quickLinks": ["So spielt man", "Xbox Cloud", "Steuerung", "RPCS3"],
+      "cards": [
+        { "title": "Skate 3 Browser Game Guide", "description": "Die komplette Orientierung — was der Port ist, wer ihn baute und was dort läuft." },
+        { "title": "Im Browser spielen", "description": "Der Schritt-für-Schritt-Walkthrough — öffnen, laden, skaten, plus die Fixes für übliche Hänger." },
+        { "title": "Die Xbox-Cloud-Route", "description": "Der offizielle Weg — Game-Pass-Streaming im Browser in zehn Minuten." },
+        { "title": "Browser vs RPCS3 vs Cloud", "description": "Drei Wege nach Port Carverton, ehrlich verglichen." }
+      ]
+    },
+    "aboutGame": {
+      "title": "Was ist das Skate 3 Browser Game?",
+      "paragraphs": [
+        "Das Skate 3 Browser Game ist die charmanteste Wendung des Jahres 2026: Ein 18-jähriger Student brachte EAs Skate-Klassiker von 2010 in einen Webbrowser — über einen Chrome-kompatiblen RPCS3-Kern (den Open-Source-PlayStation-3-Emulator), der die echte Spiel-Engine clientseitig ausführt statt Video zu streamen. Das Ergebnis läuft auf fast jedem Gerät mit Browser: Laptops, Chromebooks, Handys. Kein Download, keine Installation, keine Konsole.",
+        "Es gibt zwei ehrliche Wege in diesen Skatepark, und dieses Wiki dokumentiert beide: den inoffiziellen Web-Port (gratis, sofort, von der Community gebaut) und die offizielle Route (Xbox Cloud Gaming streamt Skate 3 mit Game-Pass-Abo — poliert, legal, kostenpflichtig). Beide bringen dich nach Port Carverton."
+      ],
+      "stats": [
+        { "label": "Original", "value": "Skate 3 (2010)" },
+        { "label": "Technik", "value": "RPCS3 im Browser" },
+        { "label": "Bauer", "value": "18-Jähriger Dev" },
+        { "label": "Ausgebrochen", "value": "Oktober 2026" },
+        { "label": "Geräte", "value": "Fast alle" },
+        { "label": "Preis", "value": "Gratis / Game Pass" }
+      ],
+      "cta": "Alle Guides entdecken"
+    },
+    "explore": {
+      "title": "Alles zum Browser-Skate 3, kartiert",
+      "description": "Guides, Technik, Vergleiche und Antworten — das komplette Toolkit.",
+      "modules": [
+        { "order": 1, "name": "Skate 3 Browser Game Guide", "description": "Die komplette Orientierung.", "href": "/guide/skate-3-browser-game-guide", "displayType": "step-by-step", "highlights": [{ "label": "1", "detail": "Was der Browser-Port wirklich ist" }, { "label": "2", "detail": "Der 18-jährige Dev und der Oktober-Ausbruch" }, { "label": "3", "detail": "Was inoffiziell ist und was offiziell" }] },
+        { "order": 2, "name": "Im Browser spielen", "description": "Der Web-Port, Schritt für Schritt.", "href": "/guide/how-to-play-in-browser", "displayType": "step-by-step", "highlights": [{ "label": "1", "detail": "Browser- und Seiten-Anforderungen" }, { "label": "2", "detail": "Laden, starten, skaten" }, { "label": "3", "detail": "Ladehänger und ihre Fixes" }] },
+        { "order": 3, "name": "Die Xbox-Cloud-Route", "description": "Der offizielle Weg.", "href": "/guide/xbox-cloud-gaming", "displayType": "tier-grid", "highlights": [{ "label": "S", "detail": "Game Pass — welches Level du brauchst" }, { "label": "A", "detail": "Streaming-Setup in zehn Minuten" }, { "label": "B", "detail": "Internet-Anforderungen" }, { "label": "C", "detail": "Ehrliche Kosten vs. Gratis-Port" }] },
+        { "order": 4, "name": "Steuerung & erste Tricks", "description": "Von Anschieben zu Tre Flip.", "href": "/guide/controls-and-tricks", "displayType": "code-cards", "highlights": [{ "label": "Flick It", "detail": "Flick-Stick-Steuerung auf Tastatur und Controller", "badge": "Praxis" }] },
+        { "order": 5, "name": "Wie der Port funktioniert", "description": "Die Technik erklärt.", "href": "/features/rpcs3-technology", "displayType": "card-list", "highlights": [{ "label": "🖥", "detail": "RPCS3 — der PS3-Emulator dahinter" }, { "label": "🌐", "detail": "Engine im Browser, kein Video-Streaming" }, { "label": "📱", "detail": "Warum fast jedes Gerät mithält" }] },
+        { "order": 6, "name": "Anforderungen & Leistung", "description": "Was deine Maschine braucht.", "href": "/features/requirements-and-performance", "displayType": "tier-grid", "highlights": [{ "label": "S", "detail": "Die Anforderungen, die zählen" }, { "label": "A", "detail": "Geräteklassen — Chromebook bis Gaming-PC" }, { "label": "B", "detail": "Controller-Support" }, { "label": "C", "detail": "Erwartbare Leistungstropfen" }] },
+        { "order": 7, "name": "Browser vs RPCS3 vs Cloud", "description": "Drei Wege verglichen.", "href": "/comparisons/browser-vs-rpcs3-vs-cloud", "displayType": "step-by-step", "highlights": [{ "label": "1", "detail": "Web-Port vs. eigenes RPCS3" }, { "label": "2", "detail": "Gratis-Port vs. Cloud-Abo" }, { "label": "3", "detail": "Welcher Weg für wen" }] },
+        { "order": 8, "name": "FAQ", "description": "Die klaren Antworten.", "href": "/faq/faq", "displayType": "card-list", "highlights": [{ "label": "❓", "detail": "Offiziell? Sicher? Legal?" }, { "label": "💸", "detail": "Wirklich gratis?" }, { "label": "🎮", "detail": "Funktioniert ein Controller?" }] }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Schnelle Antworten auf die häufigsten Fragen zum Skate 3 im Browser.",
+      "items": [
+        { "question": "Kann man Skate 3 wirklich im Browser spielen?", "answer": "Ja — seit Oktober 2026 gibt es zwei Wege. Der inoffizielle Web-Port führt die komplette Engine im Browser über einen Chrome-kompatiblen RPCS3-Build aus, gratis und ohne Download. Die offizielle Route streamt Skate 3 über Xbox Cloud Gaming mit Game-Pass-Abo. Beide laufen in einem Browser-Tab auf fast jedem Gerät." },
+        { "question": "Ist die Browser-Version gratis?", "answer": "Der Community-Web-Port ist gratis. Die offizielle Xbox-Cloud-Gaming-Route erfordert ein Xbox-Game-Pass-Abo. Die Vergleichsseite zerlegt, was jeder Weg bietet." },
+        { "question": "Ist der Port das komplette Spiel?", "answer": "Der Web-Port führt die komplette Skate-3-Engine aus — Port Carverton, Karrieremodus, alle Tricks — keine abgespeckte Demo. Es ist ein Community-Projekt, also gelegentliche Eigenheiten erwartet; was läuft, ist das echte Spiel." },
+        { "question": "Funktioniert es auf Chromebook oder Handy?", "answer": "Das ist der Partytrick des Ports — da die schwere Arbeit die gehostete Engine erledigt und dein Gerät nur einen modernen Browser braucht, läuft es auf Hardware, die das Original nie installieren könnte. Die Leistung variiert; die Anforderungsseite kartiert es." }
+      ]
+    },
+    "finalCta": {
+      "title": "Der Skatepark ist einen Tab entfernt.",
+      "description": "Die Guides, die Steuerung, die Technik und die Vergleiche — alles vom Browser-Tab zur ersten Line in Port Carverton.",
+      "primary": "Komplette Guide lesen",
+      "secondary": "Skate 3 auf Xbox Cloud"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "activeCodes": "Port-Tracker",
+    "updated": "Aktualisiert",
+    "viewAllCodes": "Alle Guides ansehen",
+    "inThisSection": "In diesem Abschnitt",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Hilfe nötig?",
+    "relatedReading": "Weiterführende Lektüre",
+    "relatedGuides": "Verwandte Guides",
+    "readMore": "Weiterlesen",
+    "officialMedia": "Offizielle Medien",
+    "home": "Start",
+    "noGuidesAvailable": "Noch keine Guides verfügbar. Bald wieder vorbeischauen!"
+  },
+  "footer": {
+    "aboutTitle": "Skate 3 Browser Game Wiki",
+    "about": "Skate 3 Browser Game Wiki ist eine unabhängige Fan-Wiki zum Community-Web-Port von EAs Skate-Klassiker — wie man ihn im Browser spielt, die offizielle Xbox-Cloud-Route, die RPCS3-Technik dahinter und alle Fragen dazwischen.",
+    "quickLinks": "Quicklinks",
+    "guides": "Guides",
+    "legal": "Rechtliches",
+    "copyright": "2026 Skate 3 Browser Game Wiki. Nicht mit Electronic Arts verbunden. Skate 3 ist eine Marke der Electronic Arts Inc.",
+    "description": "Skate 3 im Browser spielen — der Web-Port, Xbox Cloud, Steuerung und die Technik.",
+    "playGame": "Xbox-Cloud-Seite",
+    "officialDiscord": "Community",
+    "officialYoutube": "EAs Skate 3",
+    "epicStore": "Xbox",
+    "beginnerGuide": "Komplettguide",
+    "mapGuides": "So spielt man",
+    "weaponsGuides": "Xbox-Cloud-Route",
+    "buildGuide": "Drei Wege verglichen",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen"
+  },
+  "guide": {
+    "overviewTitle": "Guides",
+    "overviewDescription": "Alle Skate-3-Browser-Game-Guides — die komplette Orientierung, der Web-Port-Walkthrough, die Xbox-Cloud-Route und die Steuerung."
+  },
+  "features": {
+    "overviewTitle": "Technik",
+    "overviewDescription": "Wie der Port funktioniert und was deine Maschine braucht — die RPCS3-Technik und die Anforderungen erklärt."
+  },
+  "comparisons": {
+    "overviewTitle": "Vergleiche",
+    "overviewDescription": "Drei Wege nach Port Carverton — Browser-Port, lokales RPCS3 und Xbox Cloud, ehrlich verglichen."
+  },
+  "faq": {
+    "overviewTitle": "FAQ",
+    "overviewDescription": "Klare Antworten zum Port — Preis, Legalität, Geräte und Steuerung."
+  }
+}

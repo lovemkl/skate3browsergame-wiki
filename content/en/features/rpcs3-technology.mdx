@@ -1,0 +1,34 @@
+export const metadata = {
+  title: "How the Skate 3 Browser Port Works: The RPCS3 Technology",
+  description: "The technology behind the Skate 3 Browser Game — how RPCS3, the open-source PS3 emulator, ends up running the full Skate 3 engine inside a browser tab.",
+  category: "features",
+  date: "2026-10-17",
+};
+
+The Skate 3 Browser Game sounds like a magic trick, and like most magic tricks it is engineering wearing a cape. This page explains the machinery underneath: what RPCS3 is and why it matters, what "browser-hosted engine" actually means, why the result runs on hardware the original could never touch, and where the honest limits of the architecture live. No prior emulation knowledge assumed — this is the explainer for skaters who know exactly what a kickflip is and nothing at all about what a CPU instruction is.
+
+## RPCS3: The Star of the Story
+
+The foundation is RPCS3, the open-source PlayStation 3 emulator, and understanding its role starts with what emulation is. The PS3's brain was the Cell processor — an exotic, notoriously difficult architecture that Sony built at the height of console eccentricity. An emulator is a translation layer: software that reads the PS3's machine-code instructions — the language Skate 3 was compiled into in 2010 — and re-expresses them, on the fly or ahead of time, as instructions your ordinary x86 PC understands. RPCS3 has spent a decade maturing into the definitive Cell translator, an achievement the preservation community ranks among emulation's finest: a volunteer-built project that turned "PS3 games are trapped on dying hardware" into "PS3 games run great on the PC you already own."
+
+The Skate 3 Browser Game builds directly on that foundation. The developer — the 18-year-old student the press covered in October 2026 — took a Chrome-compatible path to hosting the game through the browser: RPCS3's emulation core, compiled into the formats the modern web ships (the WebAssembly bytecode that browsers execute near-natively), paired with the Skate 3 game itself, delivered such that a Chromium-family tab can boot and run the whole assembly. When you click Play, your browser downloads and executes the emulator; the emulator executes Skate 3's original code; the PS3 game runs, in a tab, on whatever silicon your device has. No console firmware in your machine, no disc, no server doing the heavy lifting — the entire 2010 PlayStation pipeline reconstructed as web software.
+
+## Engine in the Tab, Not Video on the Wire
+
+The distinction that defines the port's personality: computation is local. Cloud gaming — Xbox Cloud, GeForce Now, the rest — renders games on server GPUs and streams you the video; your device is a fancy television. The Skate 3 Browser Game is the opposite topology: your device is the console. Every frame of Skate 3 you see in the port is computed by your own CPU and GPU, through the browser's WebAssembly engine and hardware-accelerated graphics APIs. This single architectural fact explains everything downstream: why the port costs nothing to run (no server bills to pass along), why it scales with your device (a strong laptop plays it better than a weak Chromebook, because the laptop is doing the work), why it works offline-capably once loaded where the implementation allows, and why it can never be "server-full" — there are no servers to fill.
+
+It also explains the port's fidelity claim. Because the code executing is the actual Skate 3 engine — not a recreation, not a compatible reimplementation — the physics of the flick-it controls, the animation feel, the exact physics of a bail, are identical by construction. Emulation at RPCS3's maturity doesn't approximate a game's behavior; it reproduces it, which is why the port's Skate 3 plays like Skate 3 and not like a tribute.
+
+## Why Almost Any Device Works
+
+The headline claim — "runs on almost any device" — deserves its mechanism explained, because it sounds wrong until it doesn't. The PS3 was exotic in 2010; the average 2026 device is not powerful by gaming-PC standards but is overwhelmingly powerful by 2010-console standards, and emulation overhead — the cost of translation — has been squeezed hard by a decade of RPCS3 optimization plus modern CPUs' sheer speed. A mid-range phone chip executes more instructions per second than the Cell ever dreamed of; a school Chromebook embarrasses a 2010 games console in raw compute. The Skate 3 Browser Game simply lets all that ordinary silicon do extraordinary retro work: the requirements are less "gaming machine" and more "anything with a modern browser and working graphics," which the requirements page maps into honest per-tier expectations.
+
+The device-tier truth, stated plainly: "runs" is a spectrum from "smooth" to "struggles." The port's floor is remarkably low — genuinely old hardware boots and plays it — but the experience scales with the machine, and the honest tables live on the requirements page rather than in the marketing sentence everyone quotes.
+
+## The Honest Limits
+
+Where the architecture's costs live. Translation overhead never reaches zero — the port's performance ceiling is below native PC code, which is the price of universality. First-load size is real — the engine plus game data is a substantial fetch, and patience on first boot is the port's cover charge. Emulation quirks are the genre's permanent roommate — the community maintains the compatibility knowledge, and Skate 3's status as a well-trodden RPCS3 title means its rough edges are few and known. And the legal footing is the familiar emulation gray: the technology is legitimate and open-source; the game flowing through it belongs to EA; the arrangement lives at the rights holder's sufferance, which every page on this wiki labels honestly. None of these limits subtracts from the achievement — they are the terms of the miracle, and the terms are good ones.
+
+## The Marvel, Stated Once More
+
+Zoom out and say what this page has been saying in pieces: an open-source emulator built by volunteers over a decade; a browser runtime that turned every device on earth into a potential console; and one teenager who connected the two to a beloved game trapped on dead hardware. The Skate 3 Browser Game is what preservation looks like when the web, the emulator scene and a motivated student collide — Skate 3's second life is not a port by a studio or a re-release by a publisher, but a rescue by the commons. When you ollie in a browser tab, that is the machinery under the board — and knowing it makes the first clean kickflip land even better.

@@ -1,0 +1,13 @@
+{
+  "name": "Skate 3 Browser Game Wiki",
+  "short_name": "Skate 3 Browser Game",
+  "description": "How to play Skate 3 in your browser — the RPCS3-based web port explained step by step, the official Xbox Cloud Gaming route, system requirements, controls and every question answered.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#ff6a2b",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

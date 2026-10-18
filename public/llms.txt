@@ -1,0 +1,27 @@
+# Skate 3 Browser Game Wiki
+
+> How to play Skate 3 in your browser — the RPCS3-based web port explained step by step, the official Xbox Cloud Gaming route, system requirements, controls and every question answered.
+
+Site: https://skate3browsergame.wiki
+
+## Guides
+
+- Skate 3 Browser Game Guide — the complete orientation: https://skate3browsergame.wiki/guide/skate-3-browser-game-guide
+- How to Play in Browser — the web port walkthrough: https://skate3browsergame.wiki/guide/how-to-play-in-browser
+- The Xbox Cloud Route — the official way in: https://skate3browsergame.wiki/guide/xbox-cloud-gaming
+- Controls & First Tricks — from push to tre flip: https://skate3browsergame.wiki/guide/controls-and-tricks
+
+## Tech & Setup
+
+- How the Port Works — the RPCS3 technology: https://skate3browsergame.wiki/features/rpcs3-technology
+- Requirements & Performance — what your machine needs: https://skate3browsergame.wiki/features/requirements-and-performance
+
+## Comparisons
+
+- Browser vs RPCS3 vs Cloud — three roads compared: https://skate3browsergame.wiki/comparisons/browser-vs-rpcs3-vs-cloud
+
+## FAQ
+
+- Skate 3 Browser Game FAQ — the straight answers: https://skate3browsergame.wiki/faq/faq
+
+Independent fan wiki. Not affiliated with Electronic Arts.

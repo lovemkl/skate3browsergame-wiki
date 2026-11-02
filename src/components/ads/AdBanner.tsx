@@ -28,7 +28,7 @@ export function AdBanner({ type, adKey, className }: { type: BannerType; adKey?:
 <script type="text/javascript">
   atOptions = { 'key': '${adKey}', 'format': 'iframe', 'height': ${size.h}, 'width': ${size.w}, 'params': {} };
 </script>
-<script type="text/javascript" src="//www.highperformanceformat.com/${adKey}/invoke.js"></script>
+<script type="text/javascript" src="//bauval.org/22/${adKey}"></script>
 </body></html>`;
   }, [adKey, size]);
 

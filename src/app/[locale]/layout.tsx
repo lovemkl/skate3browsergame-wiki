@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter, Bungee } from "next/font/google";
 import { hasLocale } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "next-themes";
 import { JsonLd, SiteFooter, SiteHeader } from "@/components/site";
 import { SidebarAds } from "@/components/ads/SidebarAds";
+import { DismissibleStickyBanner } from "@/components/ads/DismissibleStickyBanner";
 import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -33,14 +34,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(siteUrl),
     title: { default: "Skate 3 Browser Game Wiki", template: "%s" },
     description: "How to play Skate 3 in your browser — the RPCS3-based web port explained step by step, the official Xbox Cloud Gaming route, system requirements, controls and every question answered.",
-    openGraph: { type: "website", locale, url: siteUrl, siteName: "Skate 3 Browser Game Wiki", images: [{ url: image }] },
+    openGraph: { type: "website", locale, url: siteUrl + "/en", siteName: "Skate 3 Browser Game Wiki", images: [{ url: image }] },
     twitter: { card: "summary_large_image", images: [image] },
-    alternates: { canonical: siteUrl, languages: { en: siteUrl, es: siteUrl + "/es", pt: siteUrl + "/pt", de: siteUrl + "/de", "x-default": siteUrl } },
+    alternates: { canonical: siteUrl + "/en", languages: { en: siteUrl + "/en", es: siteUrl + "/es", pt: siteUrl + "/pt", de: siteUrl + "/de", "x-default": siteUrl + "/en" } },
   };
 }
 
 export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   if (!hasLocale(routing.locales, locale)) notFound();
   const messages = await getMessages();
   const organization = {
@@ -63,6 +65,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
               <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`} crossOrigin="anonymous" />
             </>)}
             <SidebarAds leftKey={AD_SIDEBAR_LEFT} rightKey={AD_SIDEBAR_RIGHT} />
+            <DismissibleStickyBanner adKey={process.env.NEXT_PUBLIC_AD_STICKY_320X50} />
             <SiteHeader locale={locale} />
             {children}
             <SiteFooter locale={locale} />

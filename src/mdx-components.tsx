@@ -36,7 +36,11 @@ const defaultComponents: MDXComponents = {
   li: ({ children }) => <li className="pl-1 leading-7">{children}</li>,
   strong: ({ children }) => <strong className="font-semibold text-foreground">{children}</strong>,
   a: ({ href = "", children }) => (
-    <Link className="font-medium text-[hsl(var(--nav-theme))] underline-offset-4 hover:underline" href={href}>
+    <Link
+      className="font-medium text-[hsl(var(--nav-theme))] underline-offset-4 hover:underline"
+      // Static export (Cloudflare Workers): article pages live under /en — prefix bare site paths.
+      href={href.startsWith("/") && !href.startsWith("/en") ? `/en${href}` : href}
+    >
       {children}
     </Link>
   ),

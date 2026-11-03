@@ -21,7 +21,8 @@ const AD_FOOT = process.env.NEXT_PUBLIC_AD_BANNER_728X90;
 type Messages = typeof en;
 
 function languageAlternates(pathname: string) {
-  return Object.fromEntries(routing.locales.map((locale) => [locale, locale === "en" ? pathname : `/${locale}${pathname}`]));
+  // Static export (Cloudflare Workers): every locale lives under its prefix.
+  return Object.fromEntries(routing.locales.map((locale) => [locale, `/${locale}${pathname}`]));
 }
 
 export async function generateStaticParams() {
@@ -39,14 +40,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     const ctMessages = (messages as unknown as Record<string, Record<string, string>>)[ct];
     const title = ctMessages?.overviewTitle || `${ctTitle} — Skate 3 Browser Game`;
     const description = ctMessages?.overviewDescription || `Browse all ${ctTitle.toLowerCase()} for playing Skate 3 in your browser.`;
-    return { title, description, alternates: { canonical: `/${ct}`, languages: languageAlternates(`/${ct}`) }, openGraph: { title, description, url: `${siteUrl}/${ct}`, images: [`${siteUrl}/images/hero.webp`] } };
+    return { title, description, alternates: { canonical: `/en/${ct}`, languages: languageAlternates(`/${ct}`) }, openGraph: { title, description, url: `${siteUrl}/en/${ct}`, images: [`${siteUrl}/images/hero.webp`] } };
   }
   const [contentType, ...articleSlug] = slug;
   const item = await getContent(contentType, articleSlug, locale);
   if (!item) return { title: "Not Found" };
   const pathname = `/${contentType}/${articleSlug.join("/")}`;
   const image = item.metadata.image?.startsWith("http") ? item.metadata.image : `${siteUrl}${item.metadata.image ?? "/images/hero.webp"}`;
-  return { title: `${item.metadata.title} — Skate 3 Browser Game`, description: item.metadata.description, alternates: { canonical: pathname, languages: languageAlternates(pathname) }, openGraph: { type: "article", title: item.metadata.title, description: item.metadata.description, url: `${siteUrl}${pathname}`, images: [image] }, twitter: { card: "summary_large_image", images: [image] } };
+  return { title: `${item.metadata.title} — Skate 3 Browser Game`, description: item.metadata.description, alternates: { canonical: `/en${pathname}`, languages: languageAlternates(pathname) }, openGraph: { type: "article", title: item.metadata.title, description: item.metadata.description, url: `${siteUrl}/en${pathname}`, images: [image] }, twitter: { card: "summary_large_image", images: [image] } };
 }
 
 export default async function SlugPage({ params }: { params: Promise<{ locale: Locale; slug: string[] }> }) {
@@ -78,8 +79,8 @@ async function DetailPage({ locale, contentType, slug, navGroups }: { locale: Lo
   const pathname = `/${contentType}/${slug.join("/")}`;
   const tocLabel = messages.shared.tableOfContents || messages.shared.inThisSection || "Table of Contents";
   const sectionLabel = contentType.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-  const articleData = { "@context": "https://schema.org", "@type": "Article", headline: item.metadata.title, description: item.metadata.description, image: `${siteUrl}${item.metadata.image ?? "/images/hero.webp"}`, datePublished: item.metadata.date, dateModified: item.metadata.lastModified ?? item.metadata.date, mainEntityOfPage: `${siteUrl}${pathname}`, author: { "@type": "Organization", name: "Skate 3 Browser Game Wiki" }, publisher: { "@type": "Organization", name: "Skate 3 Browser Game Wiki", logo: { "@type": "ImageObject", url: `${siteUrl}/android-chrome-512x512.png` } } };
-  const breadcrumbData = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteUrl }, { "@type": "ListItem", position: 2, name: sectionLabel, item: `${siteUrl}/${contentType}` }, { "@type": "ListItem", position: 3, name: item.metadata.title, item: `${siteUrl}${pathname}` }] };
+  const articleData = { "@context": "https://schema.org", "@type": "Article", headline: item.metadata.title, description: item.metadata.description, image: `${siteUrl}${item.metadata.image ?? "/images/hero.webp"}`, datePublished: item.metadata.date, dateModified: item.metadata.lastModified ?? item.metadata.date, mainEntityOfPage: `${siteUrl}/en${pathname}`, author: { "@type": "Organization", name: "Skate 3 Browser Game Wiki" }, publisher: { "@type": "Organization", name: "Skate 3 Browser Game Wiki", logo: { "@type": "ImageObject", url: `${siteUrl}/android-chrome-512x512.png` } } };
+  const breadcrumbData = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/en` }, { "@type": "ListItem", position: 2, name: sectionLabel, item: `${siteUrl}/en/${contentType}` }, { "@type": "ListItem", position: 3, name: item.metadata.title, item: `${siteUrl}/en${pathname}` }] };
 
   const relatedLabel = messages.shared.relatedGuides || "Related Guides";
 

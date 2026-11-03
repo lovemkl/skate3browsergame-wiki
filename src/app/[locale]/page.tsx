@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: messages.home.meta.title,
     description: messages.home.meta.description,
-    alternates: { canonical: locale === "en" ? "/" : `/${locale}`, languages: { en: "/", es: "/es", pt: "/pt", de: "/de" } },
-    openGraph: { title: messages.home.meta.title, description: messages.home.meta.description, url: siteUrl, images: [`${siteUrl}/images/hero.webp`] },
+    alternates: { canonical: `${siteUrl}/${locale}`, languages: { en: `${siteUrl}/en`, es: `${siteUrl}/es`, pt: `${siteUrl}/pt`, de: `${siteUrl}/de` } },
+    openGraph: { title: messages.home.meta.title, description: messages.home.meta.description, url: `${siteUrl}/${locale}`, images: [`${siteUrl}/images/hero.webp`] },
   };
 }
 

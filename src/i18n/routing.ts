@@ -11,9 +11,10 @@ import { defineRouting } from "next-intl/routing";
 export const routing = defineRouting({
   locales: ["en", "es", "pt", "de"],
   defaultLocale: "en",
-  // English is served without a `/en` prefix (e.g. `/bosses`, `/bosses/gelum`).
-  localePrefix: "as-needed",
-  localeDetection: true,
+  // Every locale is served with a prefix (e.g. `/en/bosses/gelum`) — required
+  // for static export on Cloudflare Workers (no middleware allowed there).
+  localePrefix: "always",
+  localeDetection: false,
 });
 
 export type Locale = (typeof routing.locales)[number];

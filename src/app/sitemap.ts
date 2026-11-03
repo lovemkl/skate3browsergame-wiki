@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next";
 import { getAllContentPaths } from "@/lib/content";
 import { routing } from "@/i18n/routing";
 
+// Required for `output: "export"` (Cloudflare Workers static deployment).
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://skate3browsergame.wiki";
 
@@ -15,8 +18,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const paths = [...staticPaths, ...dynamicPaths];
 
     // en-only sitemap: es/pt/de locales are nav-only skeletons (thin-content guard)
+    // Static export: every page lives under its locale prefix (/en/...).
   return paths.map((path) => ({
-      url: `${siteUrl}${path === "/" ? "" : path}`,
+      url: `${siteUrl}/en${path === "/" ? "" : path}`,
       lastModified: new Date(),
       changeFrequency: path === "/" ? ("daily" as const) : ("weekly" as const),
       priority: path === "/" ? 1 : path === "/guide" ? 0.8 : 0.6,

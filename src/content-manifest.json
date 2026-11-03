@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T14:15:57.332Z",
+ "generatedAt": "2026-11-03T20:14:59.739Z",
  "items": [
   {
    "contentType": "comparisons",
@@ -336,6 +336,61 @@
      "id": "this-wikis-promise",
      "text": "This Wiki's Promise",
      "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "guide",
+   "slug": "skate-3-browser-project-explained",
+   "title": "The Skate 3 Browser Project Explained: Viral Clips, Legality & Official Options",
+   "badge": "Explained",
+   "date": "2026-11-04",
+   "category": "guide",
+   "headings": [
+    {
+     "id": "the-viral-skate-3-browser-clip-explained",
+     "text": "The Viral Skate 3 Browser Clip, Explained",
+     "level": 2
+    },
+    {
+     "id": "what-the-project-actually-is",
+     "text": "What the Project Actually Is",
+     "level": 2
+    },
+    {
+     "id": "the-legal-gray-zone-stated-plainly",
+     "text": "The Legal Gray Zone, Stated Plainly",
+     "level": 2
+    },
+    {
+     "id": "the-official-ways-to-play-skate-3-today",
+     "text": "The Official Ways to Play Skate 3 Today",
+     "level": 2
+    },
+    {
+     "id": "the-scam-wave-the-clip-created",
+     "text": "The Scam Wave the Clip Created",
+     "level": 2
+    },
+    {
+     "id": "faq",
+     "text": "FAQ",
+     "level": 2
+    },
+    {
+     "id": "can-you-really-play-skate-3-in-a-browser",
+     "text": "Can you really play Skate 3 in a browser?",
+     "level": 3
+    },
+    {
+     "id": "is-the-browser-skate-3-project-safe-to-use",
+     "text": "Is the browser Skate 3 project safe to use?",
+     "level": 3
+    },
+    {
+     "id": "what-hardware-runs-the-official-skate-3-in-2026",
+     "text": "What hardware runs the official Skate 3 in 2026?",
+     "level": 3
     }
    ]
   },

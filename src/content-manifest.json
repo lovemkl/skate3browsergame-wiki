@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T20:14:59.739Z",
+ "generatedAt": "2026-11-04T02:54:27.440Z",
  "items": [
   {
    "contentType": "comparisons",
@@ -159,6 +159,66 @@
      "id": "the-marvel-stated-once-more",
      "text": "The Marvel, Stated Once More",
      "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "games",
+   "slug": "skate-3-game-modes",
+   "title": "Skate 3 Game Modes: 1-Up, Domination and Own The Lot Explained",
+   "badge": "Modes",
+   "date": "2026-11-04",
+   "category": "games",
+   "headings": [
+    {
+     "id": "skate-3s-three-online-modes",
+     "text": "Skate 3's Three Online Modes",
+     "level": 2
+    },
+    {
+     "id": "1-up",
+     "text": "1-Up",
+     "level": 2
+    },
+    {
+     "id": "domination",
+     "text": "Domination",
+     "level": 2
+    },
+    {
+     "id": "own-the-lot",
+     "text": "Own The Lot",
+     "level": 2
+    },
+    {
+     "id": "which-mode-suits-your-crew",
+     "text": "Which Mode Suits Your Crew",
+     "level": 2
+    },
+    {
+     "id": "the-offline-reality",
+     "text": "The Offline Reality",
+     "level": 2
+    },
+    {
+     "id": "faq",
+     "text": "FAQ",
+     "level": 2
+    },
+    {
+     "id": "does-skate-3-have-online-multiplayer-in-2026",
+     "text": "Does Skate 3 have online multiplayer in 2026?",
+     "level": 3
+    },
+    {
+     "id": "which-skate-3-mode-is-best-for-beginners",
+     "text": "Which Skate 3 mode is best for beginners?",
+     "level": 3
+    },
+    {
+     "id": "is-own-the-lot-the-story-mode",
+     "text": "Is Own The Lot the story mode?",
+     "level": 3
     }
    ]
   },
